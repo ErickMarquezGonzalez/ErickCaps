@@ -1,0 +1,28 @@
+.etiqueta {
+  color: var(--acento);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.texto-gris {
+  color: var(--texto-gris);
+}
+
+.centrado {
+  text-align: center;
+}
+
+.sin-espacio-arriba {
+  padding-top: 0;
+}
+
+.oculto {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}

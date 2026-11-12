@@ -1,0 +1,21 @@
+.encabezado-pagina {
+  padding: 50px 0 40px;
+}
+
+.encabezado-pagina p {
+  margin-top: 10px;
+}
+
+.ruta {
+  font-size: 15px;
+  color: var(--texto-gris);
+  margin-bottom: 16px;
+}
+
+.ruta a {
+  color: var(--texto-gris);
+}
+
+.ruta a:hover {
+  color: var(--texto);
+}

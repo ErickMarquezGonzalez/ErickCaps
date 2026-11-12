@@ -1,0 +1,96 @@
+:root {
+  --fondo: #0b0b0b;
+  --fondo-tarjeta: #151515;
+  --borde: #2e2e2e;
+  --texto: #f4f2ee;
+  --texto-gris: #b8b5af;
+  --claro: #e9e7e2;
+  --acento: #f2a541;
+  --fuente-titulos: "Abhaya Libre", Georgia, serif;
+  --fuente-texto: "Inter", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--fondo);
+  color: var(--texto);
+  font-family: var(--fuente-texto);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--texto);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--fuente-titulos);
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 44px;
+}
+
+h3 {
+  font-family: var(--fuente-texto);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.contenedor {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.seccion {
+  padding: 80px 0;
+}
+
+.precio {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 52px;
+  }
+
+  h2 {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  .seccion {
+    padding: 56px 0;
+  }
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Erick Cap's</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/botones.css">
+  <link rel="stylesheet" href="css/formularios.css">
+  <link rel="stylesheet" href="css/encabezado.css">
+  <link rel="stylesheet" href="css/pie.css">
+  <link rel="stylesheet" href="css/productos.css">
+  <link rel="stylesheet" href="css/inicio.css">
+  <link rel="stylesheet" href="css/utilidades.css">
+</head>
+<body>
+
+  <p class="promo">Suscríbete y obtén 10% de descuento en lanzamientos exclusivos</p>
+
+  <header class="encabezado">
+    <div class="contenedor">
+      <a href="index.html" class="logo">ERICK CAP’S</a>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html" class="activo">Inicio</a></li>
+          <li><a href="index.html#colecciones">Colecciones</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="index.html#ofertas">Ofertas</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <a href="catalogo.html" class="boton-icono">
+        <img src="img/icono-buscar.svg" alt="Buscar" width="24" height="24">
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img class="hero-fondo" src="img/hero-1600.webp" alt="Joven con gorra negra sentado frente a las luces de la ciudad" width="1600" height="873">
+      <div class="contenedor">
+        <div class="hero-texto">
+          <p class="etiqueta">Gorras premium</p>
+          <h1>Las mejores gorras, en un solo lugar</h1>
+          <p>Descubre las marcas más buscadas y encuentra el modelo perfecto para complementar tu estilo.</p>
+          <div class="botones">
+            <a href="catalogo.html" class="boton">Explorar gorras</a>
+            <a href="#colecciones" class="boton boton-borde">Ver colecciones</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion" id="colecciones">
+      <div class="contenedor">
+        <div class="titulo-seccion">
+          <div>
+            <p class="etiqueta">Lo más buscado</p>
+            <h2>Colección destacada</h2>
+          </div>
+          <a href="catalogo.html" class="boton boton-borde">Ver todo el catálogo</a>
+        </div>
+
+        <ul class="productos">
+          <li>
+            <article class="producto">
+              <div class="producto-foto">
+                <img src="img/gorra-negra.webp" alt="Gorra Midnight Snapback color negro" width="537" height="465" loading="lazy">
+              </div>
+              <div class="producto-datos">
+                <h3>Midnight Snapback</h3>
+                <p class="texto-gris">Negro</p>
+                <p class="precio">$35.00</p>
+                <a href="detalles.html" class="boton boton-ancho">Ver detalles</a>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="producto">
+              <div class="producto-foto">
+                <img src="img/gorra-gris.webp" alt="Gorra Midnight Snapback color gris" width="537" height="465" loading="lazy">
+              </div>
+              <div class="producto-datos">
+                <h3>Midnight Snapback</h3>
+                <p class="texto-gris">Gris</p>
+                <p class="precio">$35.00</p>
+                <a href="detalles.html" class="boton boton-ancho">Ver detalles</a>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="producto">
+              <div class="producto-foto">
+                <img src="img/gorra-azul.webp" alt="Gorra Midnight Snapback color azul marino" width="537" height="465" loading="lazy">
+              </div>
+              <div class="producto-datos">
+                <h3>Midnight Snapback</h3>
+                <p class="texto-gris">Azul marino</p>
+                <p class="precio">$35.00</p>
+                <a href="detalles.html" class="boton boton-ancho">Ver detalles</a>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="contenedor">
+        <div class="exclusiva">
+          <div class="exclusiva-foto">
+            <img src="img/gorra-cuero.webp" alt="Gorra de cuero negro" width="677" height="369" loading="lazy">
+          </div>
+          <div class="exclusiva-texto">
+            <p class="etiqueta">Edición exclusiva</p>
+            <h2 id="titulo-exclusiva">Gorra de Cuero</h2>
+            <p class="texto-gris">Confeccionada con cuero genuino de alta calidad y detalles metálicos de precisión. Una pieza exclusiva y elegante para elevar tu estilo urbano.</p>
+            <p class="precio">$75.00</p>
+            <a href="catalogo.html" class="boton">Ver en el catálogo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion boletin" id="ofertas">
+      <div class="contenedor">
+        <p class="etiqueta">Ofertas</p>
+        <h2>Únete al culto</h2>
+        <p class="texto-gris">Suscríbete para lanzamientos exclusivos y 10% de descuento.</p>
+        <form action="mailto:soporte@gmail.com" method="post" enctype="text/plain">
+          <label for="correo-boletin" class="oculto">Correo electrónico</label>
+          <input type="email" id="correo-boletin" name="correo" placeholder="Tu correo electrónico" autocomplete="email" required>
+          <button type="submit" class="boton">Suscribirse</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <a href="index.html" class="logo">ERICK CAP’S</a>
+      <ul class="pie-redes">
+        <li>
+          <a href="https://www.instagram.com/" class="boton-icono">
+            <img src="img/icono-instagram.svg" alt="Instagram" width="24" height="24">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.tiktok.com/" class="boton-icono">
+            <img src="img/icono-tiktok.svg" alt="TikTok" width="24" height="24">
+          </a>
+        </li>
+      </ul>
+      <small>© 2026 Erick Cap’s. Todos los derechos reservados.</small>
+    </div>
+  </footer>
+
+</body>
+</html>

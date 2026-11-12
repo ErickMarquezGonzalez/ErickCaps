@@ -1,0 +1,30 @@
+.pie {
+  border-top: 1px solid var(--borde);
+  padding: 30px 0;
+}
+
+.pie .contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.pie-redes {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+}
+
+.pie small {
+  color: var(--texto-gris);
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .pie .contenedor {
+    flex-direction: column;
+    text-align: center;
+  }
+}
