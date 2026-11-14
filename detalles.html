@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Erick Cap's</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/botones.css">
+  <link rel="stylesheet" href="css/formularios.css">
+  <link rel="stylesheet" href="css/encabezado.css">
+  <link rel="stylesheet" href="css/pie.css">
+  <link rel="stylesheet" href="css/encabezado-pagina.css">
+  <link rel="stylesheet" href="css/detalles.css">
+  <link rel="stylesheet" href="css/utilidades.css">
+</head>
+<body>
+
+  <p class="promo">Suscríbete y obtén 10% de descuento en lanzamientos exclusivos</p>
+
+  <header class="encabezado">
+    <div class="contenedor">
+      <a href="index.html" class="logo">ERICK CAP’S</a>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="index.html#colecciones">Colecciones</a></li>
+          <li><a href="catalogo.html" class="activo">Catálogo</a></li>
+          <li><a href="index.html#ofertas">Ofertas</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <a href="catalogo.html" class="boton-icono">
+        <img src="img/icono-buscar.svg" alt="Buscar" width="24" height="24">
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <div class="contenedor">
+
+      <div class="encabezado-pagina">
+        <p class="ruta"><a href="index.html">Inicio</a> / <a href="catalogo.html">Catálogo</a> / Midnight Snapback</p>
+      </div>
+
+      <article class="detalle">
+
+        <div>
+          <div class="galeria-grande">
+            <img src="img/gorra-negra.webp" alt="Gorra Midnight Snapback color negro" width="537" height="465">
+          </div>
+          <ul class="galeria-chicas">
+            <li><img src="img/gorra-negra.webp" alt="Color negro" width="537" height="465"></li>
+            <li><img src="img/gorra-gris.webp" alt="Color gris" width="537" height="465"></li>
+            <li><img src="img/gorra-azul.webp" alt="Color azul marino" width="537" height="465"></li>
+          </ul>
+        </div>
+
+        <div class="detalle-info">
+          <p class="etiqueta">Gorras premium</p>
+          <h1>Midnight Snapback</h1>
+          <p class="precio">$35.00</p>
+          <p class="texto-gris">Snapback de corte clásico con visera curva y cierre ajustable. Tela resistente y un acabado limpio que combina con cualquier outfit.</p>
+
+          <form action="contacto.html">
+            <fieldset>
+              <legend>Color</legend>
+              <div class="opciones">
+                <label><input type="radio" name="color" value="Negro" checked> Negro</label>
+                <label><input type="radio" name="color" value="Gris"> Gris</label>
+                <label><input type="radio" name="color" value="Azul marino"> Azul marino</label>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Talla</legend>
+              <div class="opciones">
+                <label><input type="radio" name="talla" value="Ajustable" checked> Ajustable</label>
+                <label><input type="radio" name="talla" value="S / M"> S / M</label>
+                <label><input type="radio" name="talla" value="L / XL"> L / XL</label>
+              </div>
+            </fieldset>
+
+            <div class="compra">
+              <div class="cantidad">
+                <label for="cantidad">Cantidad</label>
+                <input type="number" id="cantidad" name="cantidad" value="1" min="1" max="10">
+              </div>
+              <button type="submit" class="boton">
+                <img src="img/icono-bolsa.svg" alt="" width="24" height="24">
+                Hacer pedido
+              </button>
+            </div>
+          </form>
+
+          <dl class="ficha">
+            <div>
+              <dt>Cierre</dt>
+              <dd>Snapback ajustable</dd>
+            </div>
+            <div>
+              <dt>Visera</dt>
+              <dd>Curva</dd>
+            </div>
+            <div>
+              <dt>Colores</dt>
+              <dd>Negro, gris y azul marino</dd>
+            </div>
+          </dl>
+        </div>
+
+      </article>
+
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <a href="index.html" class="logo">ERICK CAP’S</a>
+      <ul class="pie-redes">
+        <li>
+          <a href="https://www.instagram.com/" class="boton-icono">
+            <img src="img/icono-instagram.svg" alt="Instagram" width="24" height="24">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.tiktok.com/" class="boton-icono">
+            <img src="img/icono-tiktok.svg" alt="TikTok" width="24" height="24">
+          </a>
+        </li>
+      </ul>
+      <small>© 2026 Erick Cap’s. Todos los derechos reservados.</small>
+    </div>
+  </footer>
+
+</body>
+</html>
