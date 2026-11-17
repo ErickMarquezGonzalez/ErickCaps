@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Erick Cap's</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/botones.css">
+  <link rel="stylesheet" href="css/formularios.css">
+  <link rel="stylesheet" href="css/encabezado.css">
+  <link rel="stylesheet" href="css/pie.css">
+  <link rel="stylesheet" href="css/encabezado-pagina.css">
+  <link rel="stylesheet" href="css/contacto.css">
+  <link rel="stylesheet" href="css/utilidades.css">
+</head>
+<body>
+
+  <p class="promo">Suscríbete y obtén 10% de descuento en lanzamientos exclusivos</p>
+
+  <header class="encabezado">
+    <div class="contenedor">
+      <a href="index.html" class="logo">ERICK CAP’S</a>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="index.html#colecciones">Colecciones</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="index.html#ofertas">Ofertas</a></li>
+          <li><a href="contacto.html" class="activo">Contacto</a></li>
+        </ul>
+      </nav>
+      <a href="catalogo.html" class="boton-icono">
+        <img src="img/icono-buscar.svg" alt="Buscar" width="24" height="24">
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <div class="contenedor">
+
+      <div class="encabezado-pagina centrado">
+        <p class="etiqueta">Soporte</p>
+        <h1>Contáctanos</h1>
+        <p class="texto-gris">¿Quieres hacer un pedido o tienes dudas? Escríbenos y te respondemos.</p>
+      </div>
+
+      <div class="contacto">
+
+        <section class="panel">
+          <h2>Estamos para ayudarte</h2>
+          <p class="texto-gris">Cuéntanos qué modelo, color y talla te interesa. Si ya compraste, incluye tu número de pedido.</p>
+          <ul class="datos-contacto">
+            <li>
+              <img src="img/icono-correo.svg" alt="" width="24" height="24">
+              <a href="mailto:soporte@gmail.com">soporte@gmail.com</a>
+            </li>
+            <li>
+              <img src="img/icono-instagram.svg" alt="" width="24" height="24">
+              <a href="https://www.instagram.com/">Instagram</a>
+            </li>
+            <li>
+              <img src="img/icono-tiktok.svg" alt="" width="24" height="24">
+              <a href="https://www.tiktok.com/">TikTok</a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="panel">
+          <h2>Envíanos un mensaje</h2>
+          <form action="mailto:soporte@gmail.com" method="post" enctype="text/plain">
+            <div class="dos-campos">
+              <div class="campo">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" autocomplete="name" required>
+              </div>
+              <div class="campo">
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" autocomplete="email" required>
+              </div>
+            </div>
+            <div class="campo">
+              <label for="pedido">Número de pedido (opcional)</label>
+              <input type="text" id="pedido" name="pedido" placeholder="Ej. 1024">
+            </div>
+            <div class="campo">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" placeholder="¿En qué podemos ayudarte?" required></textarea>
+            </div>
+            <button type="submit" class="boton boton-ancho">Enviar mensaje</button>
+          </form>
+        </section>
+
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <a href="index.html" class="logo">ERICK CAP’S</a>
+      <ul class="pie-redes">
+        <li>
+          <a href="https://www.instagram.com/" class="boton-icono">
+            <img src="img/icono-instagram.svg" alt="Instagram" width="24" height="24">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.tiktok.com/" class="boton-icono">
+            <img src="img/icono-tiktok.svg" alt="TikTok" width="24" height="24">
+          </a>
+        </li>
+      </ul>
+      <small>© 2026 Erick Cap’s. Todos los derechos reservados.</small>
+    </div>
+  </footer>
+
+</body>
+</html>
